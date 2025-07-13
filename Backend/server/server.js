@@ -136,6 +136,7 @@ app.get('/userLocations/:labourId/:selectedStreet', async (req, res) => {
 
       console.log("Received labourId:", labourId);
       console.log("Received selectedStreet:", selectedStreet);
+      console.log("Hello");
 
       // Count the number of users with the given labourId, status, and street
       const userCount = await User.countDocuments({
